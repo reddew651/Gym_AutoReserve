@@ -1,4 +1,4 @@
-# 健身房自动预约
+# 中山大学健身房自动预约
 
 本 Python 脚本使用 Selenium 自动预约中山大学健身房。
 
@@ -11,19 +11,24 @@
    ```sh
    pip install selenium webdriver-manager
    ```
+5. **chrome安装tampermonkey插件，安装脚本：**
+   ```sh
+   https://greasyfork.org/zh-CN/scripts/419757-%E4%B8%AD%E5%A4%A7%E8%87%AA%E5%8A%A8%E9%AA%8C%E8%AF%81%E7%A0%81%E8%AE%A4%E8%AF%81
+   ```
+
 
 ## 使用方法
 
 1. **克隆或下载此仓库。**
 2. **修改脚本以设置 Chrome 配置文件路径：**
    ```python
-   options.add_argument("--user-data-dir=/Users/chenhaihong/Library/Application Support/Google/Chrome")
+   options.add_argument("--user-data-dir=/Users/username/Library/Application Support/Google/Chrome")
    options.add_argument("profile-directory=Profile 3")
    ```
    **更改上述路径，使其与本地 Chrome 用户数据和配置文件匹配。**
 3. **运行脚本：**
    ```sh
-   python script.py
+   python final.py
    ```
 4. **在提示时输入预约时间：**
    - `T1416` → 14:00 - 16:00
